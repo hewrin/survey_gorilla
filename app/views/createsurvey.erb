@@ -1,0 +1,55 @@
+<div class ='container'>
+  <h1>Create your survey here!</h2>
+  <form action="/createsurvey" method="post">
+    Survey Name :<input type = 'text' name ='surveyname'>
+    <br></br>
+    Question :<input type = 'text' name ='question'>
+    <br><br>
+    Choices: <br><br>
+    <div id = 'choices'>
+    <p><input type = 'text' name = 'choices[]'class = 'input'></p>
+    </div>
+    <button type = 'button' class ="add">Add</button>
+    <br>
+    <button type = 'button' class ='remove'>Remove</button>
+    <br>
+
+    <input type = 'submit' value = 'create survey'>
+  </form>
+
+</div>
+<p>Hi</p>
+<div>
+  <form action ='/logout' method ='post'>
+     <input type='submit' value='logout'>
+  </form>
+</div>
+
+
+
+<!--
+<div class ='container'>
+  <h1>Create your survey here!</h2>
+  <form action="/createsurvey" method="post">
+    Survey Name :<input type = 'text' name ='surveyname'>
+    <br></br>
+    Question :<input type = 'text' name ='question'>
+    <br><br>
+    Choices: <br><br>
+    1 <input type = 'text' name = 'choice1'><br><br>
+    2 <input type = 'text' name = 'choice2'><br><br>
+    3 <input type = 'text' name = 'choice3'><br><br>
+    <br>
+    <input type = 'submit' value = 'create survey'>
+  </form>
+
+</div>
+
+<div>
+  <form action ='/logout' method ='post'>
+     <input type='submit' value='logout'>
+  </form>
+</div>
+
+
+ -->

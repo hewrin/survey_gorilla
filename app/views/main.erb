@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Welcome to Survey Gorilla!</h1>
+  <p>Hello, <%= @user.username %>!</p>
+  <h2>What you want to do?</h2>
+
+  <a href='/createsurvey'>Create survey here</a>
+  <a href='/takesurvey'>Take survey here</a>
+
+
+</div>
+
+<div>
+  <form action ='/logout' method ='post'>
+     <input type='submit' value='logout'>
+  </form>
+</div>
+
+

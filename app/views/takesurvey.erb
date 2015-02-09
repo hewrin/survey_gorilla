@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Welcome to Survey Gorilla!</h1>
+  <h2>All Surveys!</h2>
+
+  <% @surveys.each do |x|%>
+  <p><a href='/user/<%= @user.id %>/survey/<%= x.id %>'> <%= x.surveyname %></a></p>
+  <% end %>
+</div>

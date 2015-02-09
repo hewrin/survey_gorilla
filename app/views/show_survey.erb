@@ -1,0 +1,25 @@
+<<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<div class="container">
+  <h1>Welcome to Survey Gorilla!</h1>
+  <h2>This is a survey for <%= @survey.surveyname %>!</h2>
+
+  <%= @questions.question %>
+
+  <form action="/survey/<%= @survey.id %>/" method="post">
+  <p><% @choices.each do |y| %></p>
+
+  <input type = 'radio' name = 'answer' value = '<%= y.id%>'> <%= y.choice %>
+  <% end %>
+  <br></br>
+  <input type = 'submit' value ='Insert answer'>
+  </form>
+
+
+
+</div>
+
+  <form action ='/logout' method ='post'>
+     <input type='submit' value='logout'>
+  </form>
